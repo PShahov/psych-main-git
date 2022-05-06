@@ -1,0 +1,12 @@
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;  
+}
+
+body{
+  background-color: #EBEBEB;
+  font-family: 'Manrope', sans-serif;
+  overflow-x: hidden;
+}

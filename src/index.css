@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.MenuItem {
+    transition: all 0.15s ease-in-out;
+}
+  
+/* Increase the specificity */
+.MenuItem.Mui-selected,
+.MuiMenuItem-root.Mui-selected {
+    color: white;
+    background-color: #c2c2eb!important;
+}
+/* MuiMenuItem-root MuiMenuItem-gutters Mui-selected MuiButtonBase-root css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root */
+.MuiInputBase-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline{
+    border-color: #c2c2eb!important;
+}
+/* .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline */
+/* MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root */

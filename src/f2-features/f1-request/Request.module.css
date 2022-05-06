@@ -1,0 +1,108 @@
+.requestMainContainer {
+    width: 100%;
+    max-width: 1100px;
+    background-color: #F2F0F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    padding: 35px;
+    box-sizing: border-box;
+    padding-bottom:0px;
+    padding-top:20px;
+}
+
+.requestContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.request {
+    width: calc(50% - 15px);
+    margin: 5px;
+    margin-bottom:15px;
+}
+
+.inputName{
+    font-size: 0.85em;
+    color: #00000080;
+    margin-bottom: 8px;
+}
+
+.selectContainer {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 200px;
+    min-height: 200px;
+    background-color: white;
+    border-bottom: 1px solid #282827;
+}
+
+.hide {
+    display: none;
+}
+
+.line {
+    border-bottom: 1px solid black;
+    width: 100%;
+    border-radius: 10px;
+    height: 10px;
+    margin: 10px 0;
+}
+
+.button {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.button img{
+    height:2em;
+    cursor: pointer;
+}
+.button span{
+    color: #00000080;
+
+}
+
+input{
+    border:1px solid red;
+}
+
+.arrow{
+    background-color: #D3D7EC;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+.button button{
+    border: none;
+    cursor: pointer;
+}
+
+/* .formMultiple{
+    background-color: red;
+} */
+
+/* .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.Mui-selected{
+    background-color: red!important;
+} */
+
+/* .MenuItem{
+    color:red;
+    color:green
+} */
+/* .MenuItem.Mui-selected{
+    color:green
+} */

@@ -1,0 +1,467 @@
+.mainContainer {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    font-size: 24px;
+}
+
+.psychContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    max-width: calc(33.333% - 15px);
+    margin-left: 7px;
+    margin-right: 7px;
+    padding:24px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #EBEBEB;
+    font-weight: 600;
+}
+.psychContainer:nth-child(3n + 1) {
+    margin-left: 0px;
+    margin-right: 15px;
+}
+.psychContainer:nth-child(3n) {    
+    margin-right: 0px;
+    margin-left: 15px;
+}
+
+.psychContainer.hidden{
+    display: none;
+}
+.test{
+    background-color: red;
+}
+
+.psychContainer img {
+    border-radius: 50%;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.notFound{
+    text-align: center;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin:100px 0px;
+    padding: 0px 10%;
+    color:rgba(0, 0, 0, 0.5)
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0;
+}
+.buttonContainer button{
+    /* border-radius: 30px;
+    background-color: #E5E5E5;
+    width: 300px;
+    max-width: 70vw;
+    padding:10px 0px;
+    font-size: 17px;
+    cursor: pointer; */
+
+    
+    width: 250px;
+    
+    padding: 10px 0px;
+    border:1px solid black;
+    border-radius: 50px;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 18px;
+}
+
+.experiencePriceContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.experiencePrice {
+    display: flex;
+    flex-direction: column;
+}
+.epBold{
+    font-weight: bold;
+}
+
+.line {
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: black 1px solid;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.opacityStyle {
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.name {
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.aboutMe {
+    font-size: 14px;
+    width: 88%;
+    margin-bottom: 1.5em;
+    /* min-height: 70px; */
+
+    line-height: 1.2em;
+    height:3.6em;
+    
+    display: -webkit-box;
+    /* max-width: 200px; */
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.firstA{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.education{
+    width: 88%;
+    /* min-height: 20px; */
+    line-height: 1.2em;
+    height:2.4em;
+    margin-top:0.5em;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.secondA{
+    margin: 10px;
+    background-color: #D3D7EC;
+}
+
+.mainContainer a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    width: 88%;
+    border-radius: 15px;
+    font-size: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.status{
+    margin:12px;
+    font-size: 16px;
+}
+
+.psychPopupContainer{
+    display: block;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    
+
+    background-color: rgba(0, 0, 0, 0.08);;
+
+    backdrop-filter: blur(10px);
+    
+    z-index: 100;
+}
+.psychPopup{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding:30px;
+    padding-top:50px;
+    padding-right: 0px;
+    top:50%;
+    left:50%;
+    height:70vh;
+    min-height:50vh;
+    max-height: 70vh;
+    width:100%;
+    max-width: 1300px;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #F2F0F0;
+    border-radius: 20px;
+
+}
+/* @media screen and (max-width:1601px){
+    .psychPopup{
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+} */
+
+.popupInfo{
+    width:calc(100% - 250px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popupInfo::-webkit-scrollbar {
+    width: 8px;
+    position: relative;
+    left:-8px
+}
+.popupInfo::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 8px;
+}
+.popupInfo::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0.226);
+    border-radius: 8px;
+}
+.popupBook{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+    width: 250px;
+    border-left: 1px solid black;
+    text-align: center;
+}
+.popupBook .popupPrice span{
+    display: block;
+    text-align: center;
+}
+.popupBook .popupPrice .price{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.infoFirst{
+    display: flex;
+    flex-direction: row;
+
+}
+.infoFirst img{
+    width:30%;
+    max-width: 400px;
+
+    height:auto;
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 1000px;
+}
+
+.infoFirst .name{
+    display: block;
+    font-size: 42px;
+}
+.infoFirst .status{
+    border:1px solid black;
+    padding:5px 20px;
+    border-radius: 18px;
+    display: inline-block;
+    margin:25px 0px;
+}
+
+.infoFirst .popupLineV{
+    border-bottom: 1px solid black;
+}
+.infoFirst .city{
+    margin-top: 15px;
+    margin-bottom: -10px;
+    font-size: 30px;
+    font-weight: 500;
+    display: block;
+}
+
+.infoSecond{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    width:calc(100% - 30px);
+    justify-content: space-between;
+}
+.infoSecond > div{
+    padding:28px;
+    border:1px solid black;
+    border-radius: 28px;
+    box-sizing: border-box;
+    width:calc(50% - 15px);
+}
+.infoSecond > div > span{
+    display: block;
+    font-size: 12px;
+}
+.infoSecond > div > span:not(:last-child){
+    margin-bottom: 15px;
+}
+.infoSecond > div > span.secondTitle{
+    font-size: 33px;
+    font-weight: 500;
+}
+
+button.secondA{
+    width:80%;
+    padding: 10px 0px;
+    border:none;
+    border-radius: 50px;
+    background-color: #D3D7EC;
+
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 18px;
+}
+button.firstA{
+    width:80%;
+    padding: 10px 0px;
+    border:1px solid black;
+    border-radius: 50px;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 18px;
+}
+
+.infoFirst .aboutMe{
+    display: block;
+    margin-top: 1em;
+}
+
+@media screen and (max-width:1601px){
+
+    
+    .psychPopup{
+        height:80vh;
+        min-height:50vh;
+        max-height: 100vh;
+        max-width:100%;
+        width: 1300px;
+
+    }
+
+    .psychPopup{
+        transform: translate(-50%, -50%) scale(0.8);
+        /* padding:10px; */
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .infoFirst .name{
+        font-size: 32px;
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+    .infoFirst .status{
+        display: block;
+        border:1px solid black;
+        padding:5px 20px;
+        border-radius: 18px;
+        display: block;
+        width:fit-content;
+        margin:10px 0px;
+        margin-bottom: 15px;
+
+        font-size: 12px;
+    }
+    .infoFirst .city{
+        margin-top: 10px;
+        margin-bottom: -10px;
+        font-size: 22px;
+        font-weight: 500;
+        display: block;
+    }
+    .infoFirst .opacityStyle{
+        font-size: 14px;
+    }
+    .infoFirst img{
+        width:30%;
+        max-width: 400px;
+        max-height: 35vh;
+    
+        height:auto;
+        object-fit: contain;
+        object-position: center;
+    
+        border-radius: 1000px;
+    }
+}
+
+@media screen and (max-height:650px){
+
+    
+    .psychPopup{
+        height:95vh;
+        min-height:50vh;
+        max-height: 100vh;
+        max-width:100%;
+        width: 1300px;
+
+    }
+}
+
+
+@media screen and (max-width:1051px){
+
+    .mainContainer {
+        width: 100%;
+        max-width: 1100px;
+        margin-top: 20px;
+        padding:0px 16px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 24px;
+    }
+
+    .psychContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 15px;
+        max-width: calc(50% - 15px);
+        padding:24px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: #EBEBEB;
+        font-weight: 600;
+    }
+}
+
+
+.loadPic{
+    max-width: 50%;
+    max-height: 253px;
+    height: 203px;
+    margin:15px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
